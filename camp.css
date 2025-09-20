@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #2e7d32; /* Green theme */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Campaign Sections */
+.campaign {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  background: #e8f5e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.campaign h2 {
+  color: #2e7d32;
+}
+
+.campaign button {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.campaign button:hover {
+  background: #1b5e20;
+}
+
+/* Red theme for blood donation */
+.red-theme {
+  background: #ffebee;
+}
+
+.red-theme h2 {
+  color: #b71c1c;
+}
+
+.red-theme button {
+  background: #b71c1c;
+}
+
+.red-theme button:hover {
+  background: #7f0000;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
