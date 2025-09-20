@@ -1,35 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamuna Foundation Campaign</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Samhitha — Personal Portfolio</title>
+  <meta name="description" content="Samhitha — developer focused on social impact." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Jamuna Foundation</h1>
-    <p>Together for a Better Tomorrow</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Samhitha</a>
+      <p class="tagline">Empowering communities through tech</p>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <nav id="primary-navigation" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Campaign Section -->
-  <section class="campaign">
-    <h2>Tree Plantation Drive 🌱</h2>
-    <p>Join us in making our city greener. Be a part of our campaign to plant trees and restore nature.</p>
-    <button>Join the Campaign</button>
-  </section>
+  <main>
+    <section id="hero" class="hero container">
+      <h1>Hi, Samhitha</h1>
+      <p class="lead">Web developer & community builder focused on social good.</p>
+    </section>
 
-  <!-- Another Campaign (optional) -->
-  <section class="campaign red-theme">
-    <h2>Blood Donation Camp 🩸</h2>
-    <p>Your one donation can save multiple lives. Support our blood donation initiative.</p>
-    <button>Donate Now</button>
-  </section>
+    <section id="about" class="container about">
+      <img src="C:\Users\konda\OneDrive\Desktop\22AG1A6632.jpg" alt="Samhitha — profile photo" class="profile" width="200" height="200" loading="lazy" />
+      <div>
+        <h2>About</h2>
+        <p>Final-year Computer Science student with strong skills in web development (front-end and back-end) and 
+problem-solving in Data Structures & Algorithms. Passionate about building efficient, user-friendly applications 
+and writing optimized code. Seeking an opportunity to apply my knowledge, contribute to real-world projects.</p>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Jamuna Foundation | All Rights Reserved</p>
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML / CSS / JavaScript</li>
+        <li>React / Next.js</li>
+        <li>Community engagement & workshop facilitation</li>
+        <li>Accessibility & inclusive design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Repeat project card -->
+        <article class="card">
+          <h3>Project Title</h3>
+          <p>Short description — note social impact if any.</p>
+          <p><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="container resume">
+      <h2>Resume</h2>
+      <p><a href="C:\Users\konda\OneDrive\Desktop\Konda Samhitha - Resume.pdf" download="Samhitha.pdf">Download my resume (PDF)</a></p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kondasamhitha@gmail.com">kondasamhitha@gmail.com</a><br/>Phone: <a href="tel:+91 9390694496">+91 9390694496</a></p>
+
+      <!-- Optional contact form (Formspree or Netlify) -->
+      <form action="https://formspree.io/f/your-id" method="POST" class="contact-form" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Samhitha. <a href="https://jamunafoundation.org" target="_blank" rel="noopener">Jamuna Foundation</a></small>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
